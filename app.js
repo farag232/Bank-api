@@ -1,7 +1,8 @@
 const express = require("express");
 const v4 = require("uuid");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 const utilis = require("./users.js");
 
 app.use(express.json());
